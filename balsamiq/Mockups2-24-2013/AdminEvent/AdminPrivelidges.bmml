@@ -1,0 +1,137 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="946" measuredH="569" mockupW="725" mockupH="515">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="221" y="54" w="725" h="515" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//vroot.org/events</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="274" y="134" w="-1" h="-1" measuredW="78" measuredH="36" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>VRoot</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="352" y="144" w="415" h="28" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <size>13</size>
+        <text>A%20service%20for%20connecting%20volunteers%20and%20humantarian%20organizations</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="834" y="133" w="97" h="38" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Welcome%20Beaker%0ASign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::TabBar" x="243" y="177" w="681" h="353" measuredW="591" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <selectedIndex>6</selectedIndex>
+        <size>16</size>
+        <text>Landing%2C%20VPage%2C%20Message%20Board%2C%20Events%2C%20Documentation%2C%20Facebook%2C%20Admin</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="243" y="241" w="674" h="289" measuredW="200" measuredH="122" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+        <selectedIndex>-1</selectedIndex>
+        <text>Featured%20Events%0AHistory</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="889" y="249" w="-1" h="266" measuredW="16" measuredH="100" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Button" x="265" y="365" w="150" h="27" measuredW="132" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Message%20Manager</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Button" x="265" y="296" w="150" h="27" measuredW="80" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Personnel</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Button" x="265" y="411" w="150" h="27" measuredW="93" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>NIMS%20Portal</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Button" x="265" y="342" w="150" h="27" measuredW="83" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Calendars</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Button" x="265" y="319" w="150" h="27" measuredW="102" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Event%20Set%20Up</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Button" x="265" y="387" w="150" h="27" measuredW="113" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Travel%20Manager</text>
+      </controlProperties>
+    </control>
+    <control controlID="139" controlTypeID="com.balsamiq.mockups::Calendar" x="288" y="214" w="105" h="79" measuredW="96" measuredH="96" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="141" controlTypeID="com.balsamiq.mockups::HelpButton" x="864" y="238" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="145" controlTypeID="com.balsamiq.mockups::Button" x="265" y="436" w="150" h="27" measuredW="98" measuredH="27" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Admin%20Alerts</text>
+      </controlProperties>
+    </control>
+    <control controlID="146" controlTypeID="com.balsamiq.mockups::Button" x="265" y="461" w="150" h="27" measuredW="135" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>7317724</color>
+        <text>Access%20Privelidges</text>
+      </controlProperties>
+    </control>
+    <control controlID="151" controlTypeID="com.balsamiq.mockups::PointyButton" x="672" y="456" w="101" h="-1" measuredW="101" measuredH="27" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Save%20and%20Exit</text>
+      </controlProperties>
+    </control>
+    <control controlID="152" controlTypeID="com.balsamiq.mockups::Canvas" x="466" y="249" w="383" h="199" measuredW="100" measuredH="70" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="154" controlTypeID="com.balsamiq.mockups::TextArea" x="468" y="276" w="139" h="172" measuredW="200" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Andrew%0AMaurice%0ANicole%0ARegion1_Dirs%0ARegion2_Dirs</text>
+      </controlProperties>
+    </control>
+    <control controlID="155" controlTypeID="com.balsamiq.mockups::TextInput" x="468" y="249" w="139" h="-1" measuredW="136" measuredH="27" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20Distro/Contacts</text>
+      </controlProperties>
+    </control>
+    <control controlID="156" controlTypeID="com.balsamiq.mockups::TextInput" x="607" y="249" w="242" h="-1" measuredW="226" measuredH="27" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10470904</color>
+        <text>Region1_Dirs%2C%20Region1_Dirs%2C%20maurice</text>
+      </controlProperties>
+    </control>
+    <control controlID="157" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="589" y="302" w="-1" h="143" measuredW="16" measuredH="100" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="159" controlTypeID="com.balsamiq.mockups::RoundButton" x="626" y="290" w="119" h="52" measuredW="32" measuredH="32" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>16777215</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="160" controlTypeID="com.balsamiq.mockups::RadioButtonGroup" x="641" y="295" w="104" h="47" measuredW="83" measuredH="39" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%28%20%29%20Read%20only%0A%28o%29%20Edit</text>
+      </controlProperties>
+    </control>
+    <control controlID="161" controlTypeID="com.balsamiq.mockups::Button" x="265" y="487" w="150" h="27" measuredW="123" measuredH="27" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Admin%20Messages</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

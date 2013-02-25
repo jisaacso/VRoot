@@ -1,0 +1,93 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="946" measuredH="569" mockupW="725" mockupH="515">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="221" y="54" w="725" h="515" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//vroot.org/MessageSchedule</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="834" y="133" w="97" h="38" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Welcome%20Beaker%0ASign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TabBar" x="243" y="169" w="681" h="353" measuredW="524" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <selectedIndex>2</selectedIndex>
+        <size>16</size>
+        <text>Landing%2C%20VPage%2C%20Message%20Board%2C%20Events%2C%20Documentation%2C%20Admin</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="902" y="230" w="-1" h="285" measuredW="16" measuredH="100" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::RoundButton" x="278" y="233" w="137" h="157" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>16777215</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::RadioButtonGroup" x="289" y="236" w="126" h="159" measuredW="111" measuredH="149" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Order/Group%20By%0A%28%20%29%20Unanswered%0A%28%20%29%20Time%0A%28%20%29%20Event%0A%28%20%29%20Message%20Type%0A%28%20%29%20Volunteer%0A%28o%29%20Schedule%20DTG</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Calendar" x="278" y="405" w="136" h="93" measuredW="96" measuredH="96" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::HelpButton" x="864" y="216" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Label" x="422" y="217" w="-1" h="-1" measuredW="209" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Email%20and%20Text%20Message%20Scheduler</text>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::DataGrid" x="425" y="236" w="466" h="262" measuredW="411" measuredH="51" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Date/Time%2C%20Event%2C%20Message%20Name%2C%20Author%2C%20%5BDistrobution%5D%0A01/01/2013%2C%20New%20Years%2C%20%5BTRParty%5D%2C%20Jake%2C%20HQ_Office%0A%7B20L%2C%200R%2C%2030%2C%200C%7D</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::TextArea" x="588" y="356" w="140" h="138" measuredW="200" measuredH="140" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Smith%2C%20Jon%0ATao%2C%20Dave%0AUte%2C%20Dave%0AWas%2C%20Mike%0A.%0A.%0A.</text>
+      </controlProperties>
+    </control>
+    <control controlID="87" controlTypeID="com.balsamiq.mockups::TextInput" x="588" y="305" w="282" h="-1" measuredW="254" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>New%20or%20Existing%20Distro%20Name%3A%20HQ_Office</text>
+      </controlProperties>
+    </control>
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::TextInput" x="588" y="331" w="140" h="-1" measuredW="109" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Contacts%3A%20Smith</text>
+      </controlProperties>
+    </control>
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::TextArea" x="495" y="330" w="95" h="160" measuredW="200" measuredH="140" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BNew%5D%0AHQ_Office%20%0AR1_Directors%0AR2_Directors%0AR3_Directors%0AAll_TR%0AAll_R1%0AAllVettedR10</text>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::TextInput" x="495" y="305" w="95" h="-1" measuredW="56" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Distros</text>
+      </controlProperties>
+    </control>
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Arrow" x="661" y="244" w="135" h="56" measuredW="150" measuredH="100" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>1</curvature>
+        <direction>bottom</direction>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::TextArea" x="726" y="356" w="144" h="138" measuredW="200" measuredH="140" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>HQ_Office%0ASmith@teamrubicon</text>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::TextInput" x="728" y="332" w="142" h="-1" measuredW="37" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,184 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="946" measuredH="569" mockupW="725" mockupH="515">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="221" y="54" w="725" h="515" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//vroot.org/communication</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TabBar" x="243" y="177" w="681" h="353" measuredW="262" measuredH="100" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <selectedIndex>-1</selectedIndex>
+        <size>16</size>
+        <tabHPosition>right</tabHPosition>
+        <tabVPosition>top</tabVPosition>
+        <text>Events%2C%20Documentation</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="834" y="133" w="97" h="38" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Welcome%20Beaker%0ASign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TabBar" x="243" y="177" w="681" h="353" measuredW="317" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <selectedIndex>2</selectedIndex>
+        <size>16</size>
+        <text>Landing%2C%20VPage%2C%20Communication</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::RoundButton" x="554" y="243" w="163" h="102" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>14706278</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Personal%20Message%3A%0A%20%0ABeaker%3A%20I%20might%20have%20a%20problem%0ABunsen%3A%20Oh%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::RoundButton" x="564" y="324" w="93" h="16" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Enter%20Reply</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::RoundButton" x="367" y="383" w="176" h="102" measuredW="32" measuredH="32" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>9684093</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Rebuilding%20NYC%20VThread%0A%28Global%20Message%29%0A%20%0AKermit%3A%20Meet%20at%204%3A00%20Tomorrow%0AKermit%3A%20By%20the%20bus%20stop</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::RoundButton" x="371" y="466" w="93" h="16" measuredW="32" measuredH="32" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Enter%20Reply</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::RoundButton" x="548" y="383" w="176" h="102" measuredW="32" measuredH="32" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>9684093</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Haiti%20Thread%0A%28Global%20Message%29%0A%20%0AUncle%20Sam%3A%20Great%20Job%20Volunteers%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::RoundButton" x="554" y="463" w="93" h="16" measuredW="32" measuredH="32" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Enter%20Reply</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::RoundButton" x="726" y="383" w="176" h="102" measuredW="32" measuredH="32" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>9684093</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Personal%20Message%3A%0A%20%0ARizzo%3A%20Let%27s%20grab%20some%20beer%20after%20%0Atoday%27s%20event%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::RoundButton" x="741" y="463" w="93" h="16" measuredW="32" measuredH="32" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Enter%20Reply</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::RoundButton" x="723" y="243" w="176" h="102" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>14706278</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Rebuilding%20NYC%20VThread%0A%28Message%20Group%29%0A%20%0AKermit%3A%20We%20need%20more%20volunteers%0AMs.%20Piggy%3A%20Are%20you%20serious%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::RoundButton" x="729" y="324" w="93" h="16" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text>Enter%20Reply</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="902" y="230" w="-1" h="285" measuredW="16" measuredH="100" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CheckBox" x="522" y="464" w="-1" h="-1" measuredW="20" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>up</state>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::RedX" x="518" y="463" w="24" h="26" measuredW="240" measuredH="104" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::RedX" x="874" y="460" w="24" h="26" measuredW="240" measuredH="104" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::RedX" x="701" y="460" w="24" h="26" measuredW="240" measuredH="104" zOrder="18" locked="false" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::CheckBox" x="705" y="461" w="-1" h="-1" measuredW="20" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::CheckBox" x="881" y="462" w="-1" h="-1" measuredW="20" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CheckBox" x="697" y="322" w="-1" h="-1" measuredW="20" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+        <state>selected</state>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::CheckBox" x="877" y="322" w="-1" h="-1" measuredW="20" measuredH="21" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+        <state>selected</state>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::RoundButton" x="274" y="225" w="217" h="143" measuredW="32" measuredH="32" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>16777215</color>
+        <shape>roundRect</shape>
+        <size>10</size>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::RadioButtonGroup" x="319" y="232" w="126" h="129" measuredW="111" measuredH="127" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Order/Group%20By%0A%28o%29%20Unanswered%0A%28%20%29%20Time%0A%28%20%29%20Event%0A%28%20%29%20Message%20Type%0A%28%20%29%20Volunteer</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="__group__" x="227" y="121" w="558" h="67" measuredW="558" measuredH="67" zOrder="25" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="184" y="13" w="92" h="-1" measuredW="78" measuredH="36" zOrder="0" locked="false" isInGroup="49">
+          <controlProperties>
+            <size>28</size>
+            <text>VRoot</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="264" y="19" w="294" h="28" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="49">
+          <controlProperties>
+            <align>center</align>
+            <borderColor>16777215</borderColor>
+            <size>10</size>
+            <text>A%20service%20for%20connecting%20Team%20Rubicon%20with%20its%20volunteers</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="164" h="67" measuredW="450" measuredH="250" zOrder="2" locked="false" isInGroup="49">
+          <controlProperties>
+            <src>./supporting%2520figs/team-rubicon-logo.png</src>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
