@@ -21,13 +21,13 @@ class VrootHandler(webapp2.RequestHandler, SubclassAware):
 		
 		head = ''
 		try:
-			head = self.render('views/head/' + page, values)
+			head = self.render('view/pages/head/' + page, values)
 		except TemplateNotFound:
 			head = ''
 		
 		body = ''
 		try:
-			body = self.render('views/body/' + page, values)
+			body = self.render('view/pages/body/' + page, values)
 		except TemplateNotFound:
 			self.render_error(PageNotFoundError())
 			return
@@ -37,7 +37,7 @@ class VrootHandler(webapp2.RequestHandler, SubclassAware):
 			'body': body,
 		}
 		
-		self.response.write(self.render('views/index.html', parts))
+		self.response.write(self.render('view/pages/index.html', parts))
 		
 		
 	# helper function
