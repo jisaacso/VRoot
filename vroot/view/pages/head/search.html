@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	var l = ["aaa", "aab", "aac", "aba", "abb", "abc", "aca", "acb", "acc",
+"baa", "bab", "bac", "bba", "bbb", "bbc", "bca", "bcb", "bcc",
+"caa", "cab", "cac", "cba", "cbb", "cbc", "cca", "ccb", "ccc"];
+	$(function() {
+	$("#searchBar").autocomplete({source: "/list", minLength: 1});
+	});
+	//function updateList() {
+	//	var request = $.ajax({ url: "/list?query=" + $("#searchBar").value });
+	//	request.done(function(response) { $("#dataList").html(response);
+	//										$('#searchBar').trigger("click"); })
+	//	request.fail(function() {  } );
+	//}
+	
+</script>
