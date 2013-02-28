@@ -16,7 +16,6 @@ for cls in VrootHandler.get_subclasses():
 pairs = list()
 for path, cls in mappings.items():
 	pairs.append((path, cls))
-#pairs.append((r'/405.htm', VrootHandler))
 
 app = webapp2.WSGIApplication(pairs,
                               debug=True)

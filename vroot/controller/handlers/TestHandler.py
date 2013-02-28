@@ -1,6 +1,6 @@
-from controller.util import VrootHandler
+from PageHandler import PageHandler
 
-class TestHandler(VrootHandler):
+class TestHandler(PageHandler):
 
 	# regular expression to define the path
 	path = r'/test.html'

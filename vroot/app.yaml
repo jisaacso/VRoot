@@ -6,10 +6,10 @@ threadsafe: true
 
 handlers:
 - url: /css
-  static_dir: views/css
+  static_dir: view/css
   
 - url: /js
-  static_dir: views/js
+  static_dir: view/js
 
 - url: /.*
   script: main.app
