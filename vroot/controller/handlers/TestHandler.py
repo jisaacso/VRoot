@@ -1,4 +1,4 @@
-from PageHandler import PageHandler
+from controller.handlers.base import PageHandler
 
 class TestHandler(PageHandler):
 

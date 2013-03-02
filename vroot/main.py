@@ -1,6 +1,5 @@
-from controller.util import VrootHandler
-from controller.util import PathException
 from controller.handlers import *
+from controller.exceptions import PathException
 import webapp2
 import logging
 from models import *

@@ -1,4 +1,4 @@
-from TemplateHandler import TemplateHandler
+from controller.handlers.base import TemplateHandler
 from models.User import User
 
 class IndexHandler(TemplateHandler):

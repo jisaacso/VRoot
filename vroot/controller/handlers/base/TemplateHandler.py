@@ -1,4 +1,4 @@
-from controller.util import VrootHandler
+from VrootHandler import VrootHandler
 from jinja2 import TemplateNotFound
 
 class TemplateHandler(VrootHandler):

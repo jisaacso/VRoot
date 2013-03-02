@@ -1,4 +1,4 @@
-from controller.util import VrootHandler
+from VrootHandler import VrootHandler
 
 class DataHandler(VrootHandler):
 

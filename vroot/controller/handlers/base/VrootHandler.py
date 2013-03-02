@@ -1,5 +1,5 @@
-from SubclassAware import SubclassAware
-from WebApp2RequestProperties import WebApp2RequestProperties
+from controller.util.SubclassAware import SubclassAware
+from controller.util.WebApp2RequestProperties import WebApp2RequestProperties
 from controller.exceptions import ClientError, MethodNotAllowedError, PageNotFoundError
 import webapp2
 from webapp2_extras import sessions

@@ -1,4 +1,4 @@
-from TemplateHandler import TemplateHandler
+from controller.handlers.base import TemplateHandler
 from google.appengine.ext import db
 
 class LoginHandler(TemplateHandler):

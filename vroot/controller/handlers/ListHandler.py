@@ -1,4 +1,4 @@
-from DataHandler import DataHandler
+from controller.handlers.base import DataHandler
 import re
 
 class ListHandler(DataHandler):
