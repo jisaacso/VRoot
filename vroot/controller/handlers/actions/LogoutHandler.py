@@ -1,7 +1,7 @@
-from controller.handlers.base import TemplateHandler
+from controller.handlers.base import DataHandler
 from models.User import User
 
-class LogoutHandler(TemplateHandler):
+class LogoutHandler(DataHandler):
 
     # regular expression to define the path
     path = r'/logout'
@@ -9,4 +9,4 @@ class LogoutHandler(TemplateHandler):
     # called on HTTP GET request
     def http_get(self, properties):
         self.session.clear()
-        return 'view/templates/login.html', {}
+        return "/", {"type": "raw"}

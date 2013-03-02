@@ -18,10 +18,10 @@ class VrootHandler(webapp2.RequestHandler, SubclassAware):
 		self.error(client_error.code)
 		self.response.write(self.render_template(*client_error.template_args()))
 
-	def show_page(self, *args, **kwargs):
-		self.response.write(self.create_page(*args, **kwargs))
+	def show_page(self, render_args):
+		self.response.write(self.create_page(*render_args))
 		
-	def create_page(self, *args, **kwargs):
+	def create_page(self, *args):
 		raise HandlerException(type(self))
 		
 	# helper function
@@ -33,49 +33,49 @@ class VrootHandler(webapp2.RequestHandler, SubclassAware):
 	def get(self, *args, **kwargs):
 		try:
 			render_args = self.http_get(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		
 	def post(self, *args, **kwargs):
 		try:
 			render_args = self.http_post(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		
 	def head(self, *args, **kwargs):
 		try:
 			render_args = self.http_head(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		
 	def options(self, *args, **kwargs):
 		try:
 			render_args = self.http_options(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		
 	def put(self, *args, **kwargs):
 		try:
 			render_args = self.http_put(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		
 	def delete(self, *args, **kwargs):
 		try:
 			render_args = self.http_delete(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		
 	def trace(self, *args, **kwargs):
 		try:
 			render_args = self.http_trace(self.request_properties(), *args, **kwargs)
-			self.show_page(*render_args)
+			self.show_page(render_args)
 		except ClientError as e:
 			self.show_error(e)
 		

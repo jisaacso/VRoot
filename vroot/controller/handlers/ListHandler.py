@@ -19,4 +19,4 @@ class ListHandler(DataHandler):
 		regex = re.compile(properties.get['term'] + '.*')
 		results = filter(regex.match, temp)
 	
-		return '["' + '", "'.join(results) + '"]'
+		return '["' + '", "'.join(results) + '"]', {'type': 'json'}

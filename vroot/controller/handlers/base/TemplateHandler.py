@@ -5,5 +5,5 @@ class TemplateHandler(VrootHandler):
 
 	path = r'TemplateHandler^'
 	
-	def create_page(self, page, values, *args, **kwargs):
+	def create_page(self, page, values, *args):
 		return self.render_template(page, values)

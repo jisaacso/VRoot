@@ -1,5 +1,24 @@
 <html>
 	<head>
+		<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.10.1.custom.min.js"></script>
+		<link rel="stylesheet" href="/css/jquery-ui-1.10.1.custom.min.css" />
+		
+		<script type="text/javascript">
+			$(function() {
+				$("#login").click(function() {
+					$.ajax({
+						type: "POST",
+						url: "login",
+						data: $("#login_form").serialize(),
+						success: function(response) {
+							window.location.href = response;
+							
+						}
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div align="center">
@@ -9,10 +28,10 @@
 			<b><font color="red">{{ message }}</font></b>
 		</div>
 		<div align="center">
-			<form action="login" method="post">
+			<form id="login_form">
 				<input id="email" name="email" type="email" placeholder="Email Address" /> <br />
 				<input id="password" name="password" type="password" placeholder="Password" /> <br />
-				<input type="submit" value="Log in" /> <br />
+				<button id="login" type="button">Log in</button> <br />
 			</form>
 		</div>
 		<div align="center">

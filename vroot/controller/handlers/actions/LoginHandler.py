@@ -1,7 +1,7 @@
-from controller.handlers.base import TemplateHandler
+from controller.handlers.base import DataHandler
 from google.appengine.ext import db
 
-class LoginHandler(TemplateHandler):
+class LoginHandler(DataHandler):
 
 	# regular expression to define the path
 	path = r'/login'
@@ -15,8 +15,8 @@ class LoginHandler(TemplateHandler):
 						email, password).get()
 						
 		if not user:
-			return 'view/templates/login.html', {'message': 'Invalid Username or Password.<br /> Please try again.'}
+			return "", {"type": "raw"}
                 
 		
 		self.session['user'] = user.key().id()
-		return 'view/templates/index.html', {'name': user.first_name}
+		return "/", {"type": "raw"}

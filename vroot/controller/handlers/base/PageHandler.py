@@ -5,7 +5,7 @@ class PageHandler(VrootHandler):
 
 	path = r'PageHandler^'
 	
-	def create_page(self, page, values, *args, **kwargs):
+	def create_page(self, page, values, *args):
 		
 		head = ''
 		try:
