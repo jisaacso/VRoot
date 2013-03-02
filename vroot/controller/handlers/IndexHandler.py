@@ -1,4 +1,5 @@
 from TemplateHandler import TemplateHandler
+from models.User import User
 
 class IndexHandler(TemplateHandler):
 
@@ -7,4 +8,8 @@ class IndexHandler(TemplateHandler):
 	
 	# called on HTTP GET request
 	def http_get(self, properties):
-		return 'view/templates/index.html', {}
+		if self.session.get('user'):
+			user = User.get_by_id(self.session.get('user'))
+			return 'view/templates/index.html', {'name': user.first_name}
+		else:
+			return 'view/templates/login.html', {}

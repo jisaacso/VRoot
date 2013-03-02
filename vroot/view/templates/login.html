@@ -1,7 +1,22 @@
 <html>
-	<head></head>
+	<head>
+	</head>
 	<body>
-		{{ name }} <br />
-		{{ password }} <br />
+		<div align="center">
+			<img src="images/Leadership-1.png">
+		</div>
+		<div align="center">
+			<b><font color="red">{{ message }}</font></b>
+		</div>
+		<div align="center">
+			<form action="login" method="post">
+				<input id="email" name="email" type="email" placeholder="Email Address" /> <br />
+				<input id="password" name="password" type="password" placeholder="Password" /> <br />
+				<input type="submit" value="Log in" /> <br />
+			</form>
+		</div>
+		<div align="center">
+			<a href="register">New User?</a>
+		</div>
 	</body>
 </html>
