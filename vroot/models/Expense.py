@@ -1,4 +1,6 @@
 from google.appengine.ext import db
+from Event import Event
+from User import User
 
 class Expense(db.Model):
 	user = db.ReferenceProperty(User)

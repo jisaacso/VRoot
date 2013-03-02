@@ -3,6 +3,7 @@ from controller.util import PathException
 from controller.handlers import *
 import webapp2
 import logging
+from models import *
 
 mappings = dict()
 for cls in VrootHandler.get_subclasses():

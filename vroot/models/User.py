@@ -14,4 +14,4 @@ class  User(db.Model):
 	phone_number = db.StringProperty()
 	approved = db.BooleanProperty()
 	permission_level = db.ReferenceProperty(PermissionLevel)
-	region = db.RefernceProperty(Region)
+	region = db.ReferenceProperty(Region)
