@@ -12,4 +12,4 @@ class DoRegisterHandler(DataHandler):
         name = properties.post['firstName']
         user = User(email=email, password=password, first_name=name)
         user.put()
-        return '/', {'type': 'raw'}
+        return '{ "success":  true, "target": "/" }', {'type': 'json'}

@@ -10,8 +10,9 @@
 					$.ajax({
 						type: "GET",
 						url: "logout",
+						dataType: "json",
 						success: function(response) {
-							window.location.href = response;
+							window.location.href = response.target;
 							
 						}
 					});
@@ -20,7 +21,7 @@
 		</script>
 	</head>
 	<body>
-		Welcome, Dan! <br />
+		Welcome, {{ name }}! <br />
 		<button id="logout">Log out</button>
 	</body>
 </html>

@@ -9,10 +9,11 @@
 				$("#register").click(function() {
 					$.ajax({
 						type: "POST",
+						dataType: "json",
 						url: "register/submit",
 						data: $("#register_form").serialize(),
 						success: function(response) {
-							window.location.href = response;
+							window.location.href = response.target;
 							
 						}
 					});

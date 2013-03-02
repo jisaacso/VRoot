@@ -15,8 +15,8 @@ class LoginHandler(DataHandler):
 						email, password).get()
 						
 		if not user:
-			return "", {"type": "raw"}
+			return '{ "success": false, "error": "Invalid email or password." }', {"type": "json"}
                 
 		
 		self.session['user'] = user.key().id()
-		return "/", {"type": "raw"}
+		return '{ "success":  true, "target": "/" }', {'type': 'json'}

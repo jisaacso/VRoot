@@ -9,4 +9,4 @@ class LogoutHandler(DataHandler):
     # called on HTTP GET request
     def http_get(self, properties):
         self.session.clear()
-        return "/", {"type": "raw"}
+        return '{ "success":  true, "target": "/" }', {'type': 'json'}
