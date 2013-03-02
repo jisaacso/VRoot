@@ -16,6 +16,12 @@ for cls in VrootHandler.get_subclasses():
 pairs = list()
 for path, cls in mappings.items():
 	pairs.append((path, cls))
+	
+# set configuration
+config = {}
+config['webapp2_extras.sessions'] = {
+    'secret_key': 'shrim',
+}
 
-app = webapp2.WSGIApplication(pairs,
+app = webapp2.WSGIApplication(pairs, config=config,
                               debug=True)

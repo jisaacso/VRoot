@@ -2,6 +2,7 @@ from SubclassAware import SubclassAware
 from WebApp2RequestProperties import WebApp2RequestProperties
 from controller.exceptions import ClientError, MethodNotAllowedError, PageNotFoundError
 import webapp2
+from webapp2_extras import sessions
 import jinja2
 from jinja2 import TemplateNotFound
 import os
@@ -107,6 +108,23 @@ class VrootHandler(webapp2.RequestHandler, SubclassAware):
 	def http_trace(self, properties, *args, **kwargs):
 		raise MethodNotAllowedError('TRACE')
 		return '405.html', {'method': 'TRACE'}
+		
+	# sessions setup
+	def dispatch(self):
+		# Get a session store for this request.
+		self.session_store = sessions.get_store(request=self.request)
+
+		try:
+			# Dispatch the request.
+			webapp2.RequestHandler.dispatch(self)
+		finally:
+			# Save all sessions.
+			self.session_store.save_sessions(self.response)
+
+	@webapp2.cached_property
+	def session(self):
+		# Returns a session using the default cookie key.
+		return self.session_store.get_session()
 		
 	# utility functions for subclasses
 	def parse_args(self, arg_string):
