@@ -1,0 +1,104 @@
+/* 
+    Document   : style
+    Created on : Aug 29, 2012, 3:59:32 PM
+    Author     : Nick
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html {
+    height:100%;
+}
+
+body {
+    position:relative;
+    background:#f2f2f2;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+div#show {
+	width: 460px;
+	height: 478px;
+	padding: 20px;
+	position: absolute;
+	left: 243px;
+	margin-left: -200px;
+	top: 50%;
+	margin-top: -260px;
+	background: #fffcf0;
+	border-radius: 6px;
+    border: 6px solid #425769;
+}
+
+h1 {
+	font-size: xx-large;
+	color: #000000;
+	text-align: center;
+	margin: 0 0 20px;
+	padding: 0;
+	font-family: "Comic Sans MS", cursive;
+	font-weight: bold;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+	color: #000000;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 14px;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+	background: url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -19px top no-repeat;
+	font-family: "Comic Sans MS", cursive;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+	background: url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -57px top no-repeat;
+	font-family: "Comic Sans MS", cursive;
+}
+#show table caption {
+	font-family: "Comic Sans MS", cursive;
+}
+
+#mysubmit { background-color: #bf1e30; font-size: 60%;
+    padding: 3px; font-weight: bold; 	
+	color: #ffffff;
+	font-family: "Comic Sans MS", cursive; 	
+	font-size: 14px; }
+
+
