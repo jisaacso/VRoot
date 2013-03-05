@@ -6,11 +6,11 @@ nav { display:block; margin:0 auto 20px; border:1px solid #bf1e30; position:rela
 nav ul { padding:0; margin:0; }
 nav li { position:relative; float:left; list-style-type:none; }
 nav ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
-nav li a { display:block; padding:10px 20px; border-left:1px solid #e34355; border-right:1px solid #bf1e30; color:#eee; text-decoration:none; }
+nav li a { display:block; padding:10px 20px; border-left:1px solid #e34355; border-right:1px solid #bf1e30; color:#ffffff; text-decoration:none; }
 nav li a:focus { outline:none; text-decoration:underline; } /*bf1e30    e34355*/
 nav li:first-child a {
 	border-left: none;
-	color: #fff;
+	color: #ffffff;
 }
 nav li.last a { border-right:none; }
 nav a span { display:block; float:right; margin-left:5px; }
