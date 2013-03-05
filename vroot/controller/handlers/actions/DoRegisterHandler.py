@@ -25,3 +25,12 @@ class DoRegisterHandler(DataHandler):
             user.state = properties.post['state']
             user.put()
             return '{ "success":  true, "target": "/register/3" }', {'type': 'json'}
+        
+        elif page == '3':
+            return '{ "success":  true, "target": "/register/4" }', {'type': 'json'}
+        
+        elif page == '4':
+            return '{ "success":  true, "target": "/register/5" }', {'type': 'json'}
+        
+        elif page == '5':
+            return '{ "success":  true, "target": "/" }', {'type': 'json'}

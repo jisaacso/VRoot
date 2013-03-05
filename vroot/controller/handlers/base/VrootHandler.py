@@ -19,7 +19,10 @@ class VrootHandler(webapp2.RequestHandler, SubclassAware):
 		self.response.write(self.render_template(*client_error.template_args()))
 
 	def show_page(self, render_args):
-		self.response.write(self.create_page(*render_args))
+		try:
+			self.response.write(self.create_page(*render_args))
+		except TemplateNotFound:
+			self.show_error(PageNotFoundError())
 		
 	def create_page(self, *args):
 		raise HandlerException(type(self))
