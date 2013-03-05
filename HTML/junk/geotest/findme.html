@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<title>FindMe GeoLocation Address Form Demo | TechSlides</title>
+
+<style>
+.container {width:500px;}
+#example1 {height:200px;}
+ul {clear:both;margin-bottom:20px;list-style:none;}
+textarea {width:300px;height:100px;float:right;}
+input {float:right;width:300px;}
+label {float:left;}
+.findme {float:right;}
+</style>
+        <script>
+        //analytics tag
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-941940-28']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+</head>
+<body>
+<h1>HTML5 GeoLocation Address Form Filler</h1>
+<h2>Using Google API for Reverse Geocoding</h2>
+<p>Check out the source to see how it works.  <a href="http://techslides.com/html5-geolocation-address-form-filler/">Back to Article</a></p><br>
+<div class="container">
+
+	<div id="info"></div>
+
+	<ul id="example1"><h3>Use GeoLocation to fill in an address textarea:</h3>
+		<li>
+			<button class="findme" id="find1">Find Me</button>
+			<textarea id="address" name="address" rows="5" required=""></textarea>
+			<label for="address">Address:</label>
+		</li>
+	</ul>
+<button class="findme" id="find2">Find Me</button>
+	<ul id="example2"><h3>Use GeoLocation to fill in multiple address fields:</h3>
+		<li>
+            <input type="text" name="address-line-1" id="address-line-1">
+            <label for="address-line-1">Street #1</label>
+        </li>
+        <li>
+            <input type="text" name="address-line-2" id="address-line-2">
+            <label for="address-line-2">Street #2</label>
+        </li>
+        <li>
+            <input type="text" name="city" id="city">
+            <label for="city">City</label>
+        </li>
+        <li>
+            <input type="text" name="state" id="state">
+            <label for="state">State</label>
+        </li>
+        <li>
+            <input type="text" pattern="[0-9]*" maxlength="5" required="" name="zip" id="zip">
+            <label for="zip">Zip</label>
+        </li>
+	<ul>
+		
+</div>
+
+<script>
+
+var find1 = document.getElementById("find1");
+var find2 = document.getElementById("find2");
+
+var info = document.getElementById("info");
+
+//use array to determine how it goes into DOM, I think you could use Data Attributes: http://html5doctor.com/html5-custom-data-attributes/
+var selector = [];
+
+find1.addEventListener("click", function() {
+	
+	//push in one or multiple IDs depending if its one address field or multiple
+	selector.push("address");
+
+	//go get the location
+	getLocation();
+}, false);
+
+find2.addEventListener("click", function() {
+	//push in one or multiple IDs depending if its one address field or multiple
+	selector.push("address-line-1","city","state","zip");
+
+	//go get the location
+	getLocation();
+}, false);
+
+
+function putInDom(address){
+
+  if(selector.length == 1){
+  	//one field for address
+  	var field = document.getElementById(selector[0]);
+  	field.value = address;
+  } else {
+  	//multiple fields
+  	var street = document.getElementById(selector[0]);
+  	var city = document.getElementById(selector[1]);
+  	var state = document.getElementById(selector[2]);
+  	var zip = document.getElementById(selector[3]);
+
+  	var a = address.split(",");
+  	street.value = a[0].trim();
+  	city.value = a[1].trim();
+  	state.value = a[2].trim().split(" ")[0];
+  	zip.value = a[2].trim().split(" ")[1];
+  }
+
+  //clear array
+  selector = [];
+}
+
+function getLocation(){
+  if (navigator.geolocation){
+  	//remember this is async behavior, the browser does not have access to your locations right away but it does not want to stop executing code
+    navigator.geolocation.getCurrentPosition(getAddress);
+  } else{
+	info.innerHTML="Geolocation is not supported by this browser.";
+  }
+}
+
+function getAddress(position){
+
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+
+  //grab address via Google API using your position
+  var apiurl = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lon+'&sensor=true';
+
+  //Google does not allow Cross Domain Access so let's use a Proxy: http://benalman.com/projects/php-simple-proxy/
+  var url = 'ba-simple-proxy.php?url='+encodeURIComponent(apiurl);
+
+  //make the Ajax request
+  var xhr = new XMLHttpRequest();
+
+  xhr.open("GET", url);
+  xhr.onload = function() {
+  		
+  	  //if we make a successful request and it returns an address
+	  if(this.status==200 && JSON.parse(xhr.responseText).contents.results.length > 0){
+	  	//get formatted address from https://developers.google.com/maps/documentation/geocoding/#ReverseGeocoding
+	  	var result = JSON.parse(xhr.responseText).contents.results[0].formatted_address;
+	  	putInDom(result);
+      } else {
+      	//send some general error
+      	info.innerHTML = "Could not find your location.";
+      }
+
+  }
+
+  xhr.send();
+                
+}
+</script>
+</body>
+</html>
