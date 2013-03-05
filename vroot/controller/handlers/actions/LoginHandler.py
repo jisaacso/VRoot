@@ -8,8 +8,8 @@ class LoginHandler(DataHandler):
 	
 	# called on HTTP POST request
 	def http_post(self, properties):
-		email = properties.post['email']
-		password = properties.post['password']
+		email = properties.post['loginEmail']
+		password = properties.post['loginPassword']
 		user = db.GqlQuery("SELECT * FROM User " +
 						"WHERE email = :1 AND password = :2",
 						email, password).get()

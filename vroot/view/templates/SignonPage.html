@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/Signon-1.css">
+        <style type="text/css">
+        body {
+	background-image: url(/images/SignonPic-1.png);
+	background-repeat: no-repeat;
+}
+        </style>
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/js/util.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#loginButton").click(function() {
+					ajaxFormHandler("login", "POST", $("#loginForm"), $("#loginErrorDiv"));
+				});
+				$("#registerButton").click(function() {
+					ajaxFormHandler("register/1/submit", "POST", $("#registerForm"), $("#registerErrorDiv"));
+				});
+			});
+		</script>
+		
+</head>
+
+<body>
+
+
+
+
+
+
+
+<div id="show" style="width: 454px; font-family: 'Comic Sans MS', cursive; color: #000; font-size: medium;">
+	<div width="227" height="200" style="float: left">
+		<div id="loginErrorDiv">&nbsp</div>
+		<div align="center">Login Here</div>
+		<form id="loginForm" width="158">
+			<input type="email" id="loginEmail" name="loginEmail" placeholder="you@email.com" style="margin-top: 8pt" /><br />
+			<input type="password" id="loginPassword" name="loginPassword" placeholder="Password" style="margin-top: 8pt" /><br />
+			<button type="button" id="loginButton" class="mysubmit" style="margin-top: 8pt">Login</button>
+		</form>
+	</div>
+	<div width="227" height="200" style="float: right">
+		<div id="registerErrorDiv">&nbsp</div>
+		<div align="center">Set Password/Login</div>
+		<form id="registerForm" width="158">
+			<input type="email" id="registerEmail" name="registerEmail" placeholder="you@email.com" style="margin-top: 8pt" /><br />
+			<input type="password" id="registerPassword" name="registerPassword" placeholder="Password" style="margin-top: 8pt" /><br />
+			<input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Confirm Password" style="margin-top: 8pt" /><br />
+			<button type="button" id="registerButton" class="mysubmit" style="margin-top: 8pt">Login</button>
+		</form>
+	</div>
+</div>
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+          </script>
+</body>
+</html>

@@ -12,4 +12,4 @@ class IndexHandler(TemplateHandler):
 			user = User.get_by_id(self.session.get('user'))
 			return 'view/templates/index.html', {'name': user.first_name}
 		else:
-			return 'view/templates/login.html', {}
+			return 'view/templates/SignonPage.html', {}
