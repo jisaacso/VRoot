@@ -27,3 +27,15 @@ class  User(db.Model):
 	years = db.IntegerProperty()
 	honorable_discharge = db.BooleanProperty()
 	
+	#Education
+	education = db.StringProperty()
+	certifications = db.StringProperty()
+	occupation1 = db.StringProperty()
+	occupation1Time = db.IntegerProperty()
+	occupation2 = db.StringProperty()
+	occupation2Time = db.IntegerProperty()
+	occupation3 = db.StringProperty()
+	occupation3Time = db.IntegerProperty()
+	occupation4 = db.StringProperty()
+	occupation4Time = db.IntegerProperty()
+	
