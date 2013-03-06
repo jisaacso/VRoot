@@ -5,5 +5,5 @@ from PermissionLevel import PermissionLevel
 class Waiver(db.Model):
 	name = db.StringProperty()
 	file = db.StringProperty()
-	region = db.ReferenceProperty(Region)
-	min_permission = db.ReferenceProperty(PermissionLevel)
+	region = db.ReferenceProperty(Region, collection_name='waivers')
+	min_permission = db.ReferenceProperty(PermissionLevel, collection_name='waivers')
