@@ -27,6 +27,20 @@ class DoRegisterHandler(DataHandler):
             return '{ "success":  true, "target": "/register/3" }', {'type': 'json'}
         
         elif page == '3':
+            user = User.get_by_id(self.session.get('user'))
+            user.has_served = 'not_military' not in properties.post
+            user.honorable_discharge = ('honorable_discharge' in properties.post and
+                                        properties.post['honorable_discharge'] == 'yes')
+            user.branch = properties.post['service_name']
+            user.duty_status = properties.post['duty_status']
+            user.occupations = properties.post['occupations']
+            user.deployments = properties.post['deployments']
+            user.highest_rank = properties.post['highest_rank']
+            try:
+                user.years = int(properties.post['years'])
+            except ValueError:
+                return '{ "success"; false, "error": "Years must be valid number" }', {'type': 'json'}
+            user.put()
             return '{ "success":  true, "target": "/register/4" }', {'type': 'json'}
         
         elif page == '4':

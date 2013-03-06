@@ -41,7 +41,7 @@
               <tr>
                 <td width="152"> 
                   
-                  <select type= "service" name="ServiceNames">
+                  <select type= "service" name="service_name" id="service_name"">
                     <option value="DNS" selected>Service Branch</option>
                     <option value="Army">Army</option>
                     <option value="Navy">Navy</option>
@@ -51,14 +51,14 @@
                   </select>
                   
                 </td>
-                <td width="189"><div align="right">Honerable Discharge?</div></td>
-                <td width="60"><input  type="radio"  id="c8" name="cc" required/>
+                <td width="189"><div align="right">Honorable Discharge?</div></td>
+                <td width="60"><input  type="radio"  id="honorable_discharge_yes" name="honorable_discharge" value="yes" checked required/>
                   <label for="c8"><span></span>yes</label></td>
-                <td width="132"><input  type="radio"  id="c9" name="cc" required/>
+                <td width="132"><input  type="radio"  id="honorable_discharge_no" name="honorable_discharge" value="no" required/>
                   <label for="c9"><span></span>no</label></td>                      
               </tr>
               <tr>
-                <td><select type= "Mstatus" name="MStatus">
+                <td><select type= "Mstatus" name="duty_status" id="duty_status">
                   <option value="MSTAT" selected>Duty Status</option>
                   <option value="ACTIV">Active</option>
                   <option value="RESV">Reserve</option>
@@ -70,13 +70,13 @@
                 <td>&nbsp;</td>           
               </tr>
               <tr>
-                <td><input  type="text" id="c47" name="c2" placeholder="Military Occupations"/></td>
+                <td><input  type="text" id="occupations" name="occupations" placeholder="Military Occupations"/></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>           
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td><input  type="text" id="c49" name="c4" placeholder="Deployments"/>
+                <td><input  type="text" id="deployments" name="deployments" placeholder="Deployments"/>
                   <!--  <select type= "deployments" name="Deployments">
   <option value="DNS" selected>Deployments</option>
   <option value="DesStorm">Desert Storm</option>
@@ -92,14 +92,14 @@
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td><input  type="text" id="c48" name="c3" placeholder="Highest Rank"/></td>
+                <td><input  type="text" id="highest_rank" name="highest_rank" placeholder="Highest Rank"/></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td><input  type="checkbox" id="c38" name="cc" />
+                <td><input  type="checkbox" id="not_military" name="not_military" />
                   <label for="c38"><span></span>Not Military</label></td>
               </tr>
               <tr>
-                <td><input  type="number" id="c50" name="c5" placeholder="#Years"/></td>
+                <td><input  type="number" id="years" name="years" placeholder="#Years"/></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td><button type="button" id="submitButton" class="mysubmit">Next</button></td>

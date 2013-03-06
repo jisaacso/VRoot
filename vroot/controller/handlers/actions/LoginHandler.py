@@ -10,7 +10,7 @@ class LoginHandler(DataHandler):
 	def http_post(self, properties):
 		email = properties.post['loginEmail']
 		password = properties.post['loginPassword']
-		user = db.GqlQuery("SELECT * FROM User " +
+		user = db.GqlQuery("SELECT __key__ FROM User " +
 						"WHERE email = :1 AND password = :2",
 						email, password).get()
 						
@@ -18,5 +18,5 @@ class LoginHandler(DataHandler):
 			return '{ "success": false, "error": "Invalid email or password." }', {"type": "json"}
                 
 		
-		self.session['user'] = user.key().id()
+		self.session['user'] = user.id()
 		return '{ "success":  true, "target": "/" }', {'type': 'json'}
