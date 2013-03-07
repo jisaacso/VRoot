@@ -45,24 +45,25 @@ body {
 
 #cfTextHeader{
         font-size: 24pt;
-        font-family: "Lato","Helvetica Neue";
+        font-family: "Arial";
         color: #747474;
         text-align: center;
         text-decoration: none;
 }
 #cfTextBody{
         font-size: 20pt;
-        font-family: "Lato","Helvetica Neue";
+        font-family: "Arial";
         color: #747474;
         text-align: center;
         text-decoration: none;
 }
 #logo{
 	float: right;
-	color: #999999;
-	font-family: "Lato";
+	color: #5c4b43;
+	font-family: "Arial";
 	font-size: 24pt;
 	font-weight: bold;
+	  padding:15px;
 }
 
 #form-text{
@@ -73,7 +74,7 @@ body {
         /*background-color: #d9f0fd;*/
         /*background-color: #e5fcd8; */
         //background-image: url('../images/cloth_alike.png');
-	font-family: "Lato","Helvetica Neue";
+	font-family: "Arial";
 	color: #999999;
 	font-weight: bold;
         width: 265px;
@@ -109,7 +110,7 @@ h1 {
 	text-align: center;
 	margin: 0 0 20px;
 	padding: 0;
-	font-family: "Comic Sans MS", cursive;
+	font-family: "Arial", cursive;
 	font-weight: bold;
 }
 
@@ -119,7 +120,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
 	color: #000000;
-	font-family: "Comic Sans MS", cursive;
+	font-family: "Arial", cursive;
 	font-size: medium;
 }
 
@@ -135,7 +136,7 @@ input[type="checkbox"] + label span {
 
 input[type="checkbox"]:checked + label span {
 	background: url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -19px top no-repeat;
-	font-family: "Comic Sans MS", cursive;
+	font-family: "Arial", cursive;
 }
 
 input[type="radio"] {
@@ -144,8 +145,8 @@ input[type="radio"] {
 
 input[type="radio"] + label {
 	color: #000000;
-	//font-family: "Comic Sans MS", cursive;
-	font-family: "Lato";
+	//font-family: "Arial", cursive;
+	font-family: "Arial";
 	font-size: large;
 }
 
@@ -161,17 +162,17 @@ input[type="radio"] + label span {
 
 input[type="radio"]:checked + label span {
 	background: url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -57px top no-repeat;
-	font-family: "Comic Sans MS", cursive;
+	font-family: "Arial", cursive;
 }
 #show table caption {
-	font-family: "Comic Sans MS", cursive;
+	font-family: "Arial", cursive;
 }
 
 .mysubmit { background-color: #bf1e30; font-size: 60%;
     padding: 3px; font-weight: bold; 	
 	color: #ffffff;
-	//font-family: "Comic Sans MS", cursive; 	
-	font-family: "Lato";
+	//font-family: "Arial", cursive; 	
+	font-family: "Arial";
 	font-size: 14px;
 	width: 100px; 
 	
