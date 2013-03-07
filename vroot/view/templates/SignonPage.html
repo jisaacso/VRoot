@@ -12,15 +12,15 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/Signon-1.css">
-        <style type="text/css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/Signon-1.css">
+        <!--style type="text/css">
         body {
 	background-image: url(/images/SignonPic-1.png);
 	background-repeat: no-repeat;
 }
-        </style>
+        </style-->
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
 		<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="/js/util.js"></script>
@@ -40,24 +40,32 @@
 <body>
 
 
+<div id="titlebar">
+<img src="../images/TRLogoTransWhite.png" />
+<p id="logo"> VRoot </p>
+</div>
 
 
+<div id="bkimcontainer">
+  <img id="bkim" src="../images/photo.JPG" />
+</div>
 
-
-
-<div id="show" style="width: 454px; font-family: 'Comic Sans MS', cursive; color: #000; font-size: medium;">
+<div id="subbk">
+</div>
+<!--div id="show" style="width: 454px; font-family: 'Comic Sans MS', cursive; color: #000; font-size: medium;"-->
+<div id="contact-form">
 	<div width="227" height="200" style="float: left">
 		<div id="loginErrorDiv">&nbsp</div>
-		<div align="center">Login Here</div>
+		<div align="center" >Login Here</div>
 		<form id="loginForm" width="158">
-			<input type="email" id="loginEmail" name="loginEmail" placeholder="you@email.com" style="margin-top: 8pt" /><br />
+			<input type="email" id="loginEmail" name="loginEmail" placeholder="you@email.com" id="form-text" /><br />
 			<input type="password" id="loginPassword" name="loginPassword" placeholder="Password" style="margin-top: 8pt" /><br />
 			<button type="button" id="loginButton" class="mysubmit" style="margin-top: 8pt">Login</button>
 		</form>
 	</div>
 	<div width="227" height="200" style="float: right">
 		<div id="registerErrorDiv">&nbsp</div>
-		<div align="center">Set Password/Login</div>
+		<div align="center">New Password/Login</div>
 		<form id="registerForm" width="158">
 			<input type="email" id="registerEmail" name="registerEmail" placeholder="you@email.com" style="margin-top: 8pt" /><br />
 			<input type="password" id="registerPassword" name="registerPassword" placeholder="Password" style="margin-top: 8pt" /><br />
