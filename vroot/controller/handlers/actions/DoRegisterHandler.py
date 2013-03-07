@@ -30,7 +30,8 @@ class DoRegisterHandler(DataHandler):
             user = User.get_by_id(self.session.get('user'))
             
             try:
-                user.years = int(properties.post['years'])
+                if(properties.post['years'] != ''):
+                    user.years = int(properties.post['years'])
             except ValueError:
                 return '{ "success"; false, "error": "Years must be valid number" }', {'type': 'json'}
             
@@ -48,10 +49,14 @@ class DoRegisterHandler(DataHandler):
         elif page == '4':
             user = User.get_by_id(self.session.get('user'))
             try:
-                user.occupation1Time = int(properties.post['occupation1_time'])
-                user.occupation2Time = int(properties.post['occupation2_time'])
-                user.occupation3Time = int(properties.post['occupation3_time'])
-                user.occupation4Time = int(properties.post['occupation4_time'])
+                if(properties.post['occupation1_time'] != ''):
+                    user.occupation1Time = int(properties.post['occupation1_time'])
+                if(properties.post['occupation2_time'] != ''):
+                    user.occupation2Time = int(properties.post['occupation2_time'])
+                if(properties.post['occupation3_time'] != ''):
+                    user.occupation3Time = int(properties.post['occupation3_time'])
+                if(properties.post['occupation4_time'] != ''):
+                    user.occupation4Time = int(properties.post['occupation4_time'])
             except ValueError:
                 return '{ "success"; false, "error": "Years must be valid number" }', {'type': 'json'}
             
