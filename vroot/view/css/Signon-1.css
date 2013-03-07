@@ -21,15 +21,16 @@ body {
 #titlebar{
 	width: 100%;
 	height: 100px;
-	background-image: url('../images/connect.png');
+	background-image: url('../images/wild_oliva.png');
 }
 #subbk{
-	background-image: url('../images/connect.png');
+	background-image: url('../images/wild_oliva.png');
 	width: 100%;
 	height: 100%;
 	
 }
 #bkimcontainer{
+	background-image: url('../images/wild_oliva.png');
         z-index: 3;
  	//width: 1080px;
 	width: 100%;
