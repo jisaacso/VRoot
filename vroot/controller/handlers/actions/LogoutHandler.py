@@ -8,5 +8,5 @@ class LogoutHandler(DataHandler):
     
     # called on HTTP GET request
     def http_get(self, properties):
-        self.session.clear()
+        properties.session.clear()
         return '{ "success":  true, "target": "/" }', {'type': 'json'}

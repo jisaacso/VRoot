@@ -12,11 +12,11 @@ class DoRegisterHandler(DataHandler):
             password = properties.post['registerPassword']
             user = User(email=email, password=password)
             user.put()
-            self.session['user'] = user.key().id()
+            properties.session['user'] = user.key().id()
             return '{ "success":  true, "target": "/register/2" }', {'type': 'json'}
         
         elif page == '2':
-            user = User.get_by_id(self.session.get('user'))
+            user = User.get_by_id(properties.session.get('user'))
             user.firstName = properties.post['firstName']
             user.lastName = properties.post['lastName']
             user.address1 = properties.post['address1']
@@ -27,7 +27,7 @@ class DoRegisterHandler(DataHandler):
             return '{ "success":  true, "target": "/register/3" }', {'type': 'json'}
         
         elif page == '3':
-            user = User.get_by_id(self.session.get('user'))
+            user = User.get_by_id(properties.session.get('user'))
             
             try:
                 if(properties.post['years'] != ''):
@@ -47,7 +47,7 @@ class DoRegisterHandler(DataHandler):
             return '{ "success":  true, "target": "/register/4" }', {'type': 'json'}
         
         elif page == '4':
-            user = User.get_by_id(self.session.get('user'))
+            user = User.get_by_id(properties.session.get('user'))
             try:
                 if(properties.post['occupation1_time'] != ''):
                     user.occupation1Time = int(properties.post['occupation1_time'])

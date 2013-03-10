@@ -18,5 +18,5 @@ class LoginHandler(DataHandler):
 			return '{ "success": false, "error": "Invalid email or password." }', {"type": "json"}
                 
 		
-		self.session['user'] = user.id()
+		properties.session['user'] = user.id()
 		return '{ "success":  true, "target": "/" }', {'type': 'json'}

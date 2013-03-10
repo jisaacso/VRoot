@@ -1,7 +1,7 @@
 from RequestProperties import RequestProperties
 
 class WebApp2RequestProperties(RequestProperties):
-	def __init__(self, request):
+	def __init__(self, request, session):
 		self.headers = request.headers
 		self.path = request.path
 		self.scheme = request.scheme
@@ -9,3 +9,4 @@ class WebApp2RequestProperties(RequestProperties):
 		self.post = request.POST
 		self.cookies = request.cookies
 		self.body = request.body
+		self.session = session

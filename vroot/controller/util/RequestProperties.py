@@ -7,3 +7,4 @@ class RequestProperties(object):
 		self.post = {}
 		self.cookies = {}
 		self.body = ''
+		self.session = None

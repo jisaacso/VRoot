@@ -4,5 +4,5 @@ class ActionHandler(VrootHandler):
 
 	path = r'ActionHandler^'
 	
-	def create_page(self, *args, **kwargs):
+	def render_page(self, *args, **kwargs):
 		return ''.join(args)

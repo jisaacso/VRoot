@@ -8,8 +8,8 @@ class IndexHandler(TemplateHandler):
 	
 	# called on HTTP GET request
 	def http_get(self, properties):
-		if self.session.get('user'):
-			user = User.get_by_id(self.session.get('user'))
+		if properties.session.get('user'):
+			user = User.get_by_id(properties.session.get('user'))
 			return 'view/templates/Page-0.html', {'name': user.first_name}
 		else:
 			return 'view/templates/SignonPage.html', {}
