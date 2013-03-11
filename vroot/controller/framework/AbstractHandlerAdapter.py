@@ -1,6 +1,6 @@
 import webapp2
 from webapp2_extras import sessions
-from controller.util import WebApp2RequestProperties
+from WebApp2RequestProperties import WebApp2RequestProperties
 
 class AbstractHandlerAdapter(webapp2.RequestHandler):
     def __init__(self, request, response, handler):

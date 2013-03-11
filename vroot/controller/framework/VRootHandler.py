@@ -1,16 +1,16 @@
-from controller.util.SubclassAware import SubclassAware
-from controller.util.WebApp2RequestProperties import WebApp2RequestProperties
+from controller.util import SubclassAware
+from controller.framework import WebApp2RequestProperties
 from controller.exceptions import ClientError, MethodNotAllowedError, PageNotFoundError
 import jinja2
 from jinja2 import TemplateNotFound
 import os
 
-class VrootHandler(SubclassAware):
+class VRootHandler(SubclassAware):
 	jinja_environment = jinja2.Environment(
 		loader=jinja2.FileSystemLoader(os.getcwd()))
 		
 	def render_template(self, page, values):
-		return VrootHandler.jinja_environment.get_template(page).render(values)
+		return VRootHandler.jinja_environment.get_template(page).render(values)
 		
 	def show_error(self, client_error):
 		try:

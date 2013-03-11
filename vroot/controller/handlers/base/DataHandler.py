@@ -1,6 +1,6 @@
-from VrootHandler import VrootHandler
+from controller.framework import VRootHandler
 
-class DataHandler(VrootHandler):
+class DataHandler(VRootHandler):
 
 	path = r'DataHandler^'
 	

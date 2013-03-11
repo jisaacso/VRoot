@@ -1,3 +1,1 @@
-from RequestProperties import RequestProperties
 from SubclassAware import SubclassAware
-from WebApp2RequestProperties import WebApp2RequestProperties

@@ -1,7 +1,6 @@
-from VrootHandler import VrootHandler
-from jinja2 import TemplateNotFound
+from controller.framework import VRootHandler
 
-class TemplateHandler(VrootHandler):
+class TemplateHandler(VRootHandler):
 
 	path = r'TemplateHandler^'
 	

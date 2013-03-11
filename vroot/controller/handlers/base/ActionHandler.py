@@ -1,6 +1,6 @@
-from VrootHandler import VrootHandler
+from controller.framework import VRootHandler
 
-class ActionHandler(VrootHandler):
+class ActionHandler(VRootHandler):
 
 	path = r'ActionHandler^'
 	

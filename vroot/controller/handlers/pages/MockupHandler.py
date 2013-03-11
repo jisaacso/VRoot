@@ -8,8 +8,8 @@ class MockupHandler(TemplateHandler):
 	
 	# called on HTTP GET request
 	def http_get(self, properties, page):
-		if properties.session.get('user'):
-			user = User.get_by_id(properties.session.get('user'))
+		if 'user' in properties.session:
+			user = User.get_by_id(properties.session['user'])
 			return 'view/templates/' + page, {}
 		else:
 			return 'view/templates/SignonPage.html', {}

@@ -1,8 +1,7 @@
+from controller.framework import VRootHandler
 from controller.handlers import *
 from controller.exceptions import PathException
 import webapp2
-import logging
-from models import *
 from controller.framework import AbstractHandlerAdapter
 
 def get_adapter(cls):
@@ -13,7 +12,7 @@ def get_adapter(cls):
 	return ConcreteHandlerAdapter
 
 mappings = dict()
-for cls in VrootHandler.get_subclasses():
+for cls in VRootHandler.get_subclasses():
 	# ensure handler's class variable exists and is unique
 	if not hasattr(cls, 'path') or cls.path in mappings:
 		err = True
