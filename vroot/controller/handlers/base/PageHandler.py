@@ -5,20 +5,25 @@ class PageHandler(VRootHandler):
 
 	path = r'PageHandler^'
 	
-	def render_page(self, page, values, *args):
+	def load(self, folders, part):
+		return 'view/pages/' + '/'.join(folders) + '/' + part + '.html'
+	
+	def render_page(self, path, values, *args):
 		
 		head = ''
-		try:
-			head = self.render_template('view/pages/head/' + page, values)
-		except TemplateNotFound:
-			head = ''
-		
 		body = ''
-		try:
-			body = self.render_template('view/pages/body/' + page, values)
-		except TemplateNotFound:
-			self.render_error(PageNotFoundError())
-			return
+		
+		folders = path.split('/')
+		for folder in reversed(folders):
+			try:
+				head = self.render_template(self.load(folders, 'head'), values) + '\n' + head
+			except TemplateNotFound:
+				pass
+			try:
+				body = self.render_template(self.load(folders, 'body'), values) + '\n' + body
+			except TemplateNotFound:
+				pass
+			folders.pop()
 		
 		parts = {
 			'head': head,

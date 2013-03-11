@@ -11,7 +11,7 @@ class TestHandler(PageHandler):
 		values = {'v1': 1, 'v2': 2, 'v3': 3, 'v4': 4}
 		
 		# will render views/body/test.html and views/head/test.html using values then use results in views/index.html
-		return 'test.html', values
+		return 'sub1/sub2/sub3', values
 		
 	# called on HTTP POST request
 	def http_post(self, properties):
