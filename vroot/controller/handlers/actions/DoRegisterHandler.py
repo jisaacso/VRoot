@@ -1,4 +1,5 @@
 from controller.handlers.base import ActionHandler
+from webapp2_extras import security
 from models import User
 
 class DoRegisterHandler(ActionHandler):
@@ -9,7 +10,7 @@ class DoRegisterHandler(ActionHandler):
     def http_post(self, properties, page):
         if page == '1':
             email =  properties.post['registerEmail']
-            password = properties.post['registerPassword']
+            password = security.hash_password(properties.post['registerPassword'], 'sha1')
             user = User(email=email, password=password)
             user.put()
             properties.session['user'] = user.key().id()
