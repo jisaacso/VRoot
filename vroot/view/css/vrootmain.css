@@ -1,0 +1,323 @@
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700)*/
+
+//Sign on page
+#titlebar{
+	width: 100%;
+	height: 100px;
+	position: static;
+	top: 0px;
+/*	background-image: url('../images/retina_wood.png');*/
+}
+#trlogo{
+	float: left;
+	width: 20%;
+	height: 100px;
+}
+#vlogo{
+	width: 20%;
+	height:  100px;
+	font-weight:  bold;
+	text-align: center;
+	font-size: 52px;
+	float: right;
+	position: relative;
+	top: 50px;
+}
+.container{
+	background-image: url('../images/retina_wood.png');
+	width: 100%;
+	height: 1500px;
+}
+
+#bkimcontainer{
+/*	background-image: url('../images/retina_wood.png');*/
+        z-index: 3;
+	width: 100%;
+/*    height: 500px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+#bkim{
+	max-width:100%;
+/*	width:auto\9;*/
+/*	height:auto;*/
+	vertical-align:middle;
+	border:0;
+	-ms-interpolation-mode:bicubic;
+}
+#newuserdiv{
+	font-size:  20pt;
+	color: #ffffff;
+	width: 20%;
+	height: 100px;
+	/*position: absolute;
+	top: 350px;
+	left: 10px;*/
+	position: relative;
+/*	top: -225px;*/
+	top: -275px;
+	left: 10px;
+}
+.registerForm{
+	background-color: #ffffff;
+	color: #000000;
+	margin-top: 8pt;
+	width: 200px;
+	height: 25px;
+	left: 10px;
+}
+#registerEmail{
+	height: 35px;
+	width: 200px;
+	position: relative;
+	left: 0px;
+}
+.mysubmit{
+	background-image: url('../images/retina_wood.png');
+	text-align: center;
+	width: 150px;
+	position: relative;
+	left: 57px;
+	height: 35px;
+
+}
+.normalfont{
+	color: #4E463A;
+	font-family: "Helvetica";
+	font-size: 16pt;
+	font-weight: lighter;
+	text-align: left;
+}
+#signinbutton{
+	position: relative;
+	left: 220px;
+	top: 75px;
+	color: #ffffff;
+	width: 150px;
+	height: 45px;
+	text-align: left;
+
+/*	background-color: #000000;*/
+}
+
+.loginForm{
+	background-color: #ffffff;
+	color: #000000;
+	margin-top: 8pt;
+	width: 200px;
+	height: 50px;
+	position: relative;
+	left: 0px;
+	top: -40px;
+	visibility: False;
+
+}
+#loginEmail{
+	height: 35px;
+	width: 200px;
+}
+#loginPassword{
+	height: 35px;
+	width: 200px;
+	position: relative;
+/*	left: -50px;*/
+}
+#loginErrorDiv{
+	color: red;
+	position: relative;
+	top: 61px;
+	visibility: hidden;
+/*	float:  bottom;*/
+}
+#registerErrorDiv{
+	color: red;
+	position: relative;
+	top: 40px;
+	width: 400px;
+	visibility: hidden;
+/*	float:  bottom;*/
+}
+
+#checkmark{
+	
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #704214;
+	color: #f08428;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	border: 4px solid #f08428;
+	box-shadow: 5px 5px 5px #888;
+	display: inline-block;
+	margin-right: 20px;
+}
+#missiontxt{
+	position: relative;
+	top: -50px;
+	text-align: center;
+}
+#lowercontainer{
+	width: 400px;
+	height: 1000px;
+/*	background-image: url('../images/wild_oliva.png');*/
+/*	z-index: 3;*/
+}
+#lowerimage{
+	float: left;
+	position: relative;
+	left: 200px;
+/*	width: 400px;*/
+/*z-index: 4;*/
+}
+#lowertextlist{
+/*	width: 200px;*/
+	position: relative;
+	top: 200px;
+	left: 800px;
+	text-align: left;
+	width: 500px;
+/*	z-index: 4;*/
+/*	float: right;*/
+}
+
+ul{
+	    list-style-type: none;
+	    width: 500px;
+}
+li{
+	width: 500px;
+}
+
+/*#cfTextHeader{
+        font-size: 24pt;
+        font-family: "Arial";
+        color: #747474;
+        text-align: center;
+        text-decoration: none;
+}
+#cfTextBody{
+        font-size: 20pt;
+        font-family: "Arial";
+        color: #747474;
+        text-align: center;
+        text-decoration: none;
+}
+#logo{
+	float: right;
+	color: #5c4b43;
+	font-family: "Arial";
+	font-size: 24pt;
+	font-weight: bold;
+	  padding:15px;
+}
+
+#form-text{
+	margin-top: 8pt;
+	color: #999999;
+}
+#contact-form {
+
+	font-family: "Arial";
+	color: #999999;
+	font-weight: bold;
+        width: 265px;
+        padding: 20px;
+	margin: 100px auto;
+
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+	border-radius: 15px;
+        position: absolute;
+        left: 52px;
+	top: 20px;
+}
+
+div#show {
+	width: 460px;
+	height: 200px;
+	padding: 20px;
+	position: absolute;
+	left: 243px;
+	margin-left: -200px;
+	top: 394px;
+	margin-top: -260px;
+	background: #fefffa;
+	border-radius: 6px;
+	border: 6px solid #2c1c18;
+}
+
+h1 {
+	font-size: xx-large;
+	color: #000000;
+	text-align: center;
+	margin: 0 0 20px;
+	padding: 0;
+	font-family: "Arial", cursive;
+	font-weight: bold;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+	color: #000000;
+	font-family: "Arial", cursive;
+	font-size: medium;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+	background: url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -19px top no-repeat;
+	font-family: "Arial", cursive;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+	color: #000000;
+	//font-family: "Arial", cursive;
+	font-family: "Arial";
+	font-size: large;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+	background: url(file:///C|/Users/Steve/Desktop/checkbox/check_radio_sheet.png) -57px top no-repeat;
+	font-family: "Arial", cursive;
+}
+#show table caption {
+	font-family: "Arial", cursive;
+}
+
+.mysubmit { background-color: #bf1e30; font-size: 60%;
+    padding: 3px; font-weight: bold; 	
+	color: #ffffff;
+	//font-family: "Arial", cursive; 	
+	font-family: "Arial";
+	font-size: 14px;
+	width: 100px; 
+	
+}*/
