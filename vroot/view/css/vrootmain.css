@@ -1,12 +1,17 @@
 /*@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700)*/
 
-//Sign on page
+#belowbkimcontainer{
+	background-image: url('../images/retina_wood.png');
+	width: 100%;
+	height: 200px;
+}
+
+/*Sign on page*/
 #titlebar{
+	background-image: url('../images/retina_wood.png');
 	width: 100%;
 	height: 100px;
 	position: static;
-	top: 0px;
-/*	background-image: url('../images/retina_wood.png');*/
 }
 #trlogo{
 	float: left;
@@ -18,10 +23,10 @@
 	height:  100px;
 	font-weight:  bold;
 	text-align: center;
-	font-size: 52px;
+	font-size: 55px;
 	float: right;
 	position: relative;
-	top: 50px;
+/*	top: 50px;*/
 }
 .container{
 	background-image: url('../images/retina_wood.png');

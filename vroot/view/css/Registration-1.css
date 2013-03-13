@@ -86,22 +86,63 @@ a:hover { color: #036; }
 */
 
 
+/*body{
+	background-image: url('../images/AddressPagePic-1.png');
+	background-repeat: no-repeat;
+}*/
 
+#bkimcontainer{
+/*	background-color: #bf1e30;*/
+	width: 100%;
+	height: 600px;
+/*	background-image: url('../images/retina_wood.png');*/
+}
+.cssgradients #bkimcontainer { background-image:-moz-linear-gradient(0% 75% 90deg, #DDC283, #704214); background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#DDC283), to(#704214)); } /*bf1e30    e34355*/
+
+/*
+#bkimcontainer{
+	z-index: 3;
+	width: 1080px;
+	height: 500px;
+	//max-height: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+#bkim{
+	max-width: 100%;
+}
+
+#cfTextHeader{
+	font-size: 24pt;
+	font-family: "Lato","Helvetica Neue";
+	color: #747474;
+	text-align: center;
+	text-decoration: none;	
+}
+#cfTextBody{
+	font-size: 20pt;
+	font-family: "Lato","Helvetica Neue";
+	color: #747474;
+	text-align: center;
+	text-decoration: none;
+}
 
 #contact-form {
-	/*background-color: #d9f0fd;*/
-	background-color: #e5fcd8;
+
+	background-image: url('../images/cloth_alike.png');
+	font-family: "Helvetica";
 	width: 265px;
 	padding: 20px;
-	margin: 100px auto;
-	/*border: 6px solid #bf1e30;*/
-	border: 6px solid #3e5531;
+
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
-	position: absolute;
-	left: 52px;
-	top: -34px;
+
+	position: relative;
+	left: 200px;
+	top: 100px;
+	opacity: .9;
+	z-index:4;
 }
 
 #contact-form h1 {
@@ -156,6 +197,8 @@ a:hover { color: #036; }
 
 #contact-form #submit-button {
 	width: 100px;
+	height: 50px;
+	font-size: 20pt;
 	background-color: #333;
 	color: #000000;
 	border: none;
@@ -165,6 +208,8 @@ a:hover { color: #036; }
 	margin-right: 6px;
 	background-color: #bf1e30;
 	-moz-border-radius: 8px;
+	position: relative;
+	left: 0px;
 }
 
 #contact-form #submit-button:hover {

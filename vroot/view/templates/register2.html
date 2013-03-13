@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
+<head>
+<!--        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">-->
         <link rel="stylesheet" href="../css/Registration-1.css">
-   
-        <!--style type="text/css">
-        body {
-	background-image: url(../images/AddressPagePic-1.png);
-	background-repeat: no-repeat;
-}
-        </style-->
+        
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../css/vrootmain.css">
+
 		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="../js/util.js"></script>
+		
+		
 		<script type="text/javascript">
 			$(function() {
 				$("#submit-button").click(function() {
@@ -34,136 +22,124 @@
 		</script>
 </head>
      
-<!--<body bgcolor="#F4FAFB" > -->
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-     <!--   <p align="left"> -->
-<!--<div id="contact-form" class="clearfix">
-    <ul id="errors" class="">
-    <li id="info">There were some problems with your form submission:</li>
-  </ul> -->
 <body>
 
-<div id="bkimcontainer">
-  <img id="bkim" src="../images/AddressPagePic-1.png" />
-</div>
-  
-<div id="contact-form" class="clearfix">  
-
-      <!--  <h1>Get In Touch!</h1>  
-        <h2>Fill out our super swanky HTML5 contact form below to get in touch with us! Please provide as much information as possible for us to help you with your enquiry :)</h2>   -->
-        <ul id="errors" class="">  
-            <li id="info">There were some problems with your form submission:</li>  
-        </ul>  
-        <p id="success">Thanks for your message! We will get back to you ASAP!</p>  
-        <form id="registerForm">
-	    <p id="cfTextHeader"> VRoot </p>
-	    <p id="cfTextBody"> Sign Up Now </p>
-	    
-            <!--label for="firstName"> First Name: <span class="required">*</span></label-->  
-            <input type="text" id="firstName" name="firstName" value="" placeholder="First Name" required />  
-            <!--label for="lastName">Last Name: <span class="required">*</span></label-->  
-            <input type="text" id="lastName" name="lastName" value="" placeholder="Last Name" required />  
-                        
-            <!--label for="address1">Address: <span class="required">*</span></label-->  
-            <input type="adress" id="address1" name="address1" value="" placeholder="Address " required />  
-            
-            <!--label for="address2">Address: </label-->  
-            <input type="adress" id="address2" name="address2" value="" placeholder="Address Line 2" />  
-            
-            <!--label for="Zip">Zip: <span class="required">*</span></label-->  
-            <input type="zip" id="zip" name="zip" value="" placeholder="zip" />  
-            
-            <span class="required">*</span>
-          
-          <!--  <input type="State" id="State" name="State" value="" placeholder="Wasted" />  --> 
-            
-                       
-  <select type= "state" name="state">
-  <option value="DNS" selected> Select State:</option>
-  <option value="AL">Alabama</option>
-  <option value="AK">Alaska</option>
-  <option value="AZ">Arizona</option>
-  <option value="AR">Arkansas</option>
-  <option value="CA">California</option>
-  <option value="CO">Colorado</option>
-  <option value="CT">Connecticut</option>
-  <option value="DE">Delaware</option>
-  <option value="FL">Florida</option>
-  <option value="GA">Georgia</option>
-  <option value="HI">Hawaii</option>
-  <option value="ID">Idaho</option>
-  <option value="IL">Illinois</option>
-  <option value="IN">Indiana</option>
-  <option value="IA">Iowa</option>
-  <option value="KS">Kansas</option>
-  <option value="KY">Kentucky</option>
-  <option value="LA">Louisiana</option>
-  <option value="ME">Maine</option>
-  <option value="MD">Maryland</option>
-  <option value="MA">Massachusetts</option>
-  <option value="MI">Michigan</option>
-  <option value="MN">Minnesota</option>
-  <option value="MS">Mississippi</option>
-  <option value="MO">Missouri</option>
-  <option value="MT">Montana</option>
-  <option value="NE">Nebraska</option>
-  <option value="NV">Nevada</option>
-  <option value="NH">New Hampshire</option>
-  <option value="NJ">New Jersey</option>
-  <option value="NM">New Mexico</option>
-  <option value="NY">New York</option>
-  <option value="NC">North Carolina</option>
-  <option value="ND">North Dakota</option>
-  <option value="OH">Ohio</option>
-  <option value="OK">Oklahoma</option>
-  <option value="OR">Oregon</option>
-  <option value="PA">Pennsylvania</option>
-  <option value="RI">Rhode Island</option>
-  <option value="SC">South Carolina</option>
-  <option value="SD">South Dakota</option>
-  <option value="TN">Tennessee</option>
-  <option value="TX">Texas</option>
-  <option value="UT">Utah</option>
-  <option value="VT">Vermont</option>
-  <option value="VA">Virginia</option>
-  <option value="WA">Washington</option>
-  <option value="WV">West Virginia</option>
-  <option value="WI">Wisconsin</option>
-  <option value="WS">Wasted</option>
-  <option value="WY">Wyoming</option>
-</select>
-                       
-            
-<!--           <label for="telephone">Telephone: </label>  
-            <input type="tel" id="telephone" name="telephone" value="" />   -->
-<!--            <label for="enquiry">Enquiry: </label>  
-            <select id="enquiry" name="enquiry">  
-                <option value="general">General</option>  
-                <option value="sales">Sales</option>  
-                <option value="support">Support</option>  
-            </select>   -->
-          <!--  <label for="message">Message: <span class="required">*</span></label>  
-            <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>   -->
-            <span id="loading"></span>  
-            <button type="button" id="submit-button">Next</button>
-            <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>  
-        </form>  
- 
-
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp; </p>
-<script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-          </script>
+	<div id="titlebar">
+		<div id="trlogo"> <a href="http://www.teamrubiconusa.org"><img src='../images/TRLogo-2.png' /></a> </div> 
+		<div id="vlogo" class="normalfont"> VRoot </div>
+	</div>
+	
+	<div id="bkimcontainer">
+		
+		  
+		<div id="contact-form" class="clearfix normalfont">  
+		
+		      <!--  <h1>Get In Touch!</h1>  
+		        <h2>Fill out our super swanky HTML5 contact form below to get in touch with us! Please provide as much information as possible for us to help you with your enquiry :)</h2>   -->
+		        <ul id="errors" class="">  
+		            <li id="info">There were some problems with your form submission:</li>  
+		        </ul>  
+		        <p id="success">Thanks for your message! We will get back to you ASAP!</p>  
+		        <form id="registerForm">
+			    <p id="cfTextHeader"> VRoot </p>
+			    <p id="cfTextBody"> Sign Up Now </p>
+			    
+		            <!--label for="firstName"> First Name: <span class="required">*</span></label-->  
+		            <input type="text" id="firstName" name="firstName" value="" placeholder="First Name" class="normalfont" required />  
+		            <!--label for="lastName">Last Name: <span class="required">*</span></label-->  
+		            <input type="text" id="lastName" name="lastName" value="" placeholder="Last Name" class="normalfont" required />  
+		                        
+		            <!--label for="address1">Address: <span class="required">*</span></label-->  
+		            <input type="adress" id="address1" name="address1" value="" placeholder="Address " class="normalfont" required />  
+		            
+		            <!--label for="address2">Address: </label-->  
+		            <input type="adress" id="address2" name="address2" value="" placeholder="Address Line 2" class="normalfont" />  
+		            
+		            <!--label for="Zip">Zip: <span class="required">*</span></label-->  
+		            <input type="zip" id="zip" name="zip" value="" placeholder="zip" class="normalfont" />  
+		            
+		            <span class="required">*</span>
+		          
+		          <!--  <input type="State" id="State" name="State" value="" placeholder="Wasted" />  --> 
+		            
+		                       
+		  <select type= "state" name="state">
+		  <option value="DNS" selected class="normalfont"> Select State:</option>
+		  <option value="AL">Alabama</option>
+		  <option value="AK">Alaska</option>
+		  <option value="AZ">Arizona</option>
+		  <option value="AR">Arkansas</option>
+		  <option value="CA">California</option>
+		  <option value="CO">Colorado</option>
+		  <option value="CT">Connecticut</option>
+		  <option value="DE">Delaware</option>
+		  <option value="FL">Florida</option>
+		  <option value="GA">Georgia</option>
+		  <option value="HI">Hawaii</option>
+		  <option value="ID">Idaho</option>
+		  <option value="IL">Illinois</option>
+		  <option value="IN">Indiana</option>
+		  <option value="IA">Iowa</option>
+		  <option value="KS">Kansas</option>
+		  <option value="KY">Kentucky</option>
+		  <option value="LA">Louisiana</option>
+		  <option value="ME">Maine</option>
+		  <option value="MD">Maryland</option>
+		  <option value="MA">Massachusetts</option>
+		  <option value="MI">Michigan</option>
+		  <option value="MN">Minnesota</option>
+		  <option value="MS">Mississippi</option>
+		  <option value="MO">Missouri</option>
+		  <option value="MT">Montana</option>
+		  <option value="NE">Nebraska</option>
+		  <option value="NV">Nevada</option>
+		  <option value="NH">New Hampshire</option>
+		  <option value="NJ">New Jersey</option>
+		  <option value="NM">New Mexico</option>
+		  <option value="NY">New York</option>
+		  <option value="NC">North Carolina</option>
+		  <option value="ND">North Dakota</option>
+		  <option value="OH">Ohio</option>
+		  <option value="OK">Oklahoma</option>
+		  <option value="OR">Oregon</option>
+		  <option value="PA">Pennsylvania</option>
+		  <option value="RI">Rhode Island</option>
+		  <option value="SC">South Carolina</option>
+		  <option value="SD">South Dakota</option>
+		  <option value="TN">Tennessee</option>
+		  <option value="TX">Texas</option>
+		  <option value="UT">Utah</option>
+		  <option value="VT">Vermont</option>
+		  <option value="VA">Virginia</option>
+		  <option value="WA">Washington</option>
+		  <option value="WV">West Virginia</option>
+		  <option value="WI">Wisconsin</option>
+		  <option value="WS">Wasted</option>
+		  <option value="WY">Wyoming</option>
+		</select>
+		                       
+		            
+		<!--           <label for="telephone">Telephone: </label>  
+		            <input type="tel" id="telephone" name="telephone" value="" />   -->
+		<!--            <label for="enquiry">Enquiry: </label>  
+		            <select id="enquiry" name="enquiry">  
+		                <option value="general">General</option>  
+		                <option value="sales">Sales</option>  
+		                <option value="support">Support</option>  
+		            </select>   -->
+		          <!--  <label for="message">Message: <span class="required">*</span></label>  
+		            <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>   -->
+		            <span id="loading"></span>  
+		            <button type="button" id="submit-button" class="mysubmit normalfont">Next</button>
+		            <p id="req-field-desc" class="normalfont"><span class="required">*</span> indicates a required field</p>  
+		        </form>  
+		 
+		
+		</div>
+	</div>
+	<div id="belowbkimcontainer">
+	</div>
 </body>
+
 </html>
