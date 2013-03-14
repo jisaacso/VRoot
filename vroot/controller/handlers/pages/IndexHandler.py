@@ -10,6 +10,6 @@ class IndexHandler(TemplateHandler):
 	def http_get(self, properties):
 		if 'user' in properties.session:
 			user = User.get_by_id(properties.session['user'])
-			return 'view/templates/Page-0.html', {'name': user.first_name}
+			return 'view/templates/Page-0.html', {'image': 'landing.png'}
 		else:
 			return 'view/templates/SignonPage.html', {}

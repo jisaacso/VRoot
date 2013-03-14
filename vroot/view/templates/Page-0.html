@@ -8,11 +8,7 @@
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script type="text/javascript">
-				$(function(){
-					$("#logoutButton").click(function() {
-						ajaxFormHandler("logout", "GET", $("#errorDiv"));
-					});
-				});
+				
 			</script>
 		<![endif]-->
 	</head>
@@ -87,13 +83,19 @@
        
        
     </div>
-	<div align="center">
+	<div align="center" id="errorDiv">
 	      <script src="../js/jquery-1.9.1.min.js"></script>
 	      <script src="../js/modernizr.js"></script>
+		  <script src="/js/util.js"></script>
       <br>
       <br>
-      <img src="../images/landing.png" alt="landing" width="732" height="444">    </div>
+      <img src="/images/{{ image }}" alt="landing" width="732" height="444">    </div>
 	<script>
+			$(function(){
+					$("#logoutButton").click(function() {
+						ajaxHandler("logout", "GET", $("#errorDiv"));
+					});
+				});
 			(function($){
 				
 				//cache nav
