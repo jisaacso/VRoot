@@ -10,14 +10,18 @@ class DoRegisterHandler(ActionHandler):
     def http_post(self, properties, page):
         if page == '1':
             email =  properties.post['registerEmail']
-            password = security.hash_password(properties.post['registerPassword'], 'sha1')
-            user = User(email=email, password=password)
+            user = User(email=email)
             user.put()
             properties.session['user'] = user.key().id()
             return '{ "success":  true, "target": "/register/2" }'
         
         elif page == '2':
             user = User.get_by_id(properties.session.get('user'))
+            if(user.email != properties.post['email']):
+                return '{ "success": false, "error": "Email address entered incorrectly" }'
+            if(len(properties.post['password']) < 4):
+                return '{ "success": false, "error": "Password must be at least 4 characters" }'
+            user.password = security.hash_password(properties.post['password'], 'sha1')
             user.firstName = properties.post['firstName']
             user.lastName = properties.post['lastName']
             user.address1 = properties.post['address1']
