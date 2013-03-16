@@ -28,12 +28,13 @@
 }
 #vlogo{
 	width: 20%;
-	height:  100px;
-	font-weight:  bold;
+	height: 100px;
+	font-weight: bold;
 	text-align: center;
 	font-size: 55px;
 	float: right;
 	position: relative;
+	font-family: Verdana;
 /*	top: 50px;*/
 }
 .container{
@@ -65,17 +66,18 @@
 	-ms-interpolation-mode:bicubic;
 }
 #newuserdiv{
-	font-size:  20pt;
-	color: #ffffff;
+	font-size: 20pt;
+	color: #000000;
 	width: 20%;
 	height: 100px;
 	/*position: absolute;
 	top: 350px;
 	left: 10px;*/
 	position: relative;
-/*	top: -225px;*/
+	/*	top: -225px;*/
 	top: -275px;
 	left: 10px;
+	font-family: Verdana;
 }
 .registerForm{
 	background-color: #ffffff;
@@ -112,10 +114,11 @@
 	position: relative;
 	left: 220px;
 	top: 75px;
-	color: #ffffff;
+	color: #0000CC;
 	width: 150px;
 	height: 45px;
 	text-align: left;
+	font-family: verdana;
 
 /*	background-color: #000000;*/
 }
@@ -177,6 +180,7 @@
 	position: relative;
 	top: -50px;
 	text-align: center;
+	font-family: vedana;
 }
 #lowercontainer{
 	width: 400px;

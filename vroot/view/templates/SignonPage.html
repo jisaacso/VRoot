@@ -23,8 +23,12 @@
         </style-->
         
         <link rel="stylesheet" href="../css/vrootmain.css">
-        
-		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+        <style type="text/css">
+        .blue {
+	color: #0000FF;
+}
+        </style>
+        <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="../js/jqscript.js"></script>
  		<script type="text/javascript" src="/js/util.js"></script>
 		 
@@ -44,23 +48,26 @@
 
 <body>
 
-	<div id="titlebar">
+<!--	<div id="titlebar">
 		<div id="trlogo"> <a href="http://www.teamrubiconusa.org"> <img src='../images/TRLogo-2.png' /> </a></div> 
 		<div id="vlogo" class="normalfont"> VRoot </div>
-	</div>
+	</div> -->
 	
 	<div class="container">
 
 		
 		
-		<div id="bkimcontainer">
-		  <img id="bkim" src="../images/photo.JPG" />
-		  
-		  	<div id="newuserdiv" class="normalfont">
-		  		A service for connecting Team Rubicon with volunteers
-		  		<div id="signinbutton" class="normalfont">
+	  <div id="bkimcontainer">
+          <div align="center"><img src="../images/SignOn2.JPG" alt="" usemap="#bkimMap" id="bkim" / >
+            <map name="bkimMap">
+              <area shape="rect" coords="357,13,628,119" href="http://teamrubiconusa.org" target="teamrubiconusa.org">
+            </map>
+          </div>
+          <div id="newuserdiv" class="normalfont">
+		  <!--		A service for connecting Team Rubicon with volunteers -->
+	  		  <div id="signinbutton" class="normalfont">
 		  			Sign in?
-		  		</div>
+	  		</div>
 		  		
 		  		<form class="registerForm" id="registerForm">
 	<!--	  			<input type="email" id="loginEmail" name="loginEmail" placeholder="Email" id="form-text" /><br />-->
@@ -84,27 +91,10 @@
 		  		</div>
 
 		  		
-		  	</div>
+  	    </div>
 		  	
 		</div>
-		<div id="missiontxt" class="normalfont">
-			<h1 font-weight:lighter> Our mission is simple... </h1>
-			<div id="lowerconatiner">
-				<div id="lowertextlist">
-					<ul>
-						<li><div id="checkmark">&#x2713</div>Connect Team Rubicon to volunteers</li>
-					
-						<li><div id="checkmark">&#x2713</div>Connect volunteers to Team Rubicon</li>
-				
-						<li><div id="checkmark">&#x2713</div>Connect volunteers to volunteers</li>
-					</ul>
-				</div>
-				<div id="lowerimage">
-					<img src="../images/Leadership_Sepia.png" />					
-				</div>
-			</div>
-		</div>
-	</div>
+</div>
 	
 
 <!--	<div id="subbk">
